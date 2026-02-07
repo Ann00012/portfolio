@@ -1,0 +1,93 @@
+.header {
+    display:flex;
+    justify-content :space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.link{
+    font-size:16px;
+    font-weight: 300;
+  
+}
+.link:hover {
+  color: #00B068; 
+}
+
+.logo{
+    font-size:32px;
+    z-index: 1002;
+}
+
+.spanLogo{
+font-size:32px;
+color:#00B068;
+}
+.navigation{
+    margin:0;
+    padding:0;
+    display:flex;
+    gap:40px;
+    align-items: center;
+    list-style-type: none;
+}
+
+.burger {
+    display: none; 
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.line {
+    width: 25px;
+    height: 2px;
+    background-color:#00B068;; 
+    transition: 0.3s;
+}
+
+
+@media (max-width: 768px) {
+    .burger {
+        display: flex; 
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%; 
+        width: 100%;
+        height: 100vh;
+        background-color:#E4E5E6; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s ease;
+        z-index: 1000;
+    }
+
+    .navActive {
+        right: 0; 
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .link {
+        font-size: 24px;
+    }
+
+    .lineOpen:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .lineOpen:nth-child(2) { opacity: 0; }
+    .lineOpen:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+}
+
+.activeLink {
+    color: #00B068; /* Зелений колір */
+    font-weight: 600; /* Можна додати жирності для акценту */
+}

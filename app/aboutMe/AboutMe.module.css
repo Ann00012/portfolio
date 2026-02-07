@@ -1,0 +1,97 @@
+.aboutSection {
+  margin: 0 auto;
+    padding-top:32px;
+     padding-bottom: 132px;
+}
+
+.aboutTitle {
+  font-size: clamp(48px, 10vw, 120px);
+  text-transform: uppercase;
+  margin-bottom: clamp(30px, 5vw, 60px);
+}
+
+.spanMe {
+  color: #00B068;
+}
+
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px; 
+}
+
+.leftColumn, .rightColumn {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.rightColumn {
+  flex: 1.2;
+}
+
+.aboutPhoto {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.subTitle {
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  background-color: #00B068;
+  border-radius: 50%;
+}
+
+
+@media (max-width: 1024px) {
+    .aboutSection{
+        padding-bottom:32px ;
+    }
+  .flexContainer {
+    flex-direction: column; 
+    gap: 40px;
+  }
+
+  .leftColumn, .rightColumn {
+    width: 100%;
+  }
+
+  .aboutPhoto {
+    max-width: 600px;
+    align-self: center;
+  }
+}

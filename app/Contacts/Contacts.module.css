@@ -1,0 +1,114 @@
+.contactSection {
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 132px;
+}
+
+
+.container {
+  max-width: 1436px;
+}
+
+.title {
+  font-size: clamp(48px, 10vw, 120px);
+  text-transform: uppercase;
+  margin-bottom: clamp(30px, 5vw, 60px);
+  line-height: 0.9;
+  font-weight: 900;
+}
+
+.title span {
+  color: #00B068;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.leftColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.rightColumn {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subtitle {
+  font-size: 20px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 600;
+}
+
+.sendBtn {
+  background-color: #00B068;
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-start; 
+  transition: background-color 0.3s ease;
+}
+
+.sendBtn:hover {
+  background-color: #008a52;
+}
+
+.contactsList {
+  list-style: none;
+  padding: 0;
+}
+
+.contactsList li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+.contactsList li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  background-color: #00B068;
+  border-radius: 50%;
+}
+
+.contactsList a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Медіа-запити ідентичні до About */
+@media (max-width: 1024px) {
+  .contactSection {
+    padding-bottom: 32px;
+  }
+  
+  .flexContainer {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .leftColumn, .rightColumn {
+    width: 100%;
+  }
+}

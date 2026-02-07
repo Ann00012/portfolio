@@ -1,0 +1,117 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 500;
+    color: #212529;
+  }
+  
+  .input,
+  .textarea,
+  .select {
+    margin-top: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    resize: none;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+  
+  .submitButton {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color:#00B068;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #009156;
+  }
+  
+  .submitButton:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  .cancelButton {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    color: #212529;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .cancelButton:hover {
+    background-color: #e2e6ea;
+  }
+  
+  .error {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+
+
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 420px;
+
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.title span {
+  color: #00b067;
+}
+
+.subtitle {
+  margin: 16px 0 24px;
+  font-size: 14px;
+  color: #555;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+  
