@@ -4,12 +4,15 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
+        hostname: 'opengraph.githubassets.com',
+      },
+      {
+        protocol: 'https',
         hostname: 'images.pexels.com',
-        port: '',
         pathname: '/photos/**',
       },
     ],
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

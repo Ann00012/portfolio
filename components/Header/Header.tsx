@@ -35,7 +35,7 @@ export default function Header() {
             className={`${css.link} ${pathname === "/" ? css.activeLink : ""}`} 
             onClick={() => setIsOpen(false)}
           >
-            <Link href="/">Projects</Link>
+            <Link href="/projects">Projects</Link>
           </li>
           
           <li 

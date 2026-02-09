@@ -88,6 +88,6 @@ color:#00B068;
 }
 
 .activeLink {
-    color: #00B068; /* Зелений колір */
-    font-weight: 600; /* Можна додати жирності для акценту */
+    color: #00B068; 
+    font-weight: 600; 
 }
