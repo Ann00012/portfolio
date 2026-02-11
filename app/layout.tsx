@@ -15,6 +15,9 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "Portfolio",
+  icons: {
+    icon: "/favicon.png", 
+  },
   openGraph: {
     title: "Portfolio",
     description: "Portfolio",

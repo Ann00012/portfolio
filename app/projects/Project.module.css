@@ -11,6 +11,27 @@
   height: 320px;
 }
 
+.githubImage{
+ object-fit: contain;
+}
 .content {
   padding: 24px;
+}
+
+.projectTitle{
+   font-size: clamp(48px, 10vw, 120px);
+  text-transform: uppercase;
+  margin-bottom: clamp(30px, 5vw, 60px);
+}
+
+.projectSpan{
+color: #00B068;
+}
+
+.linkToGitHub{
+  color: #00B068;
+}
+
+.linkToGitHub:hover{
+color:  #008a52;
 }

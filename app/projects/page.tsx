@@ -8,13 +8,14 @@ export default async function Projects() {
 
   return (
       <section className={css.projects}>
-      <h2>
-        MY <span>PROJECT</span>
+      <h2 className={ css.projectTitle}>
+        MY <span className={ css.projectSpan}>PROJECT</span>
       </h2>
 
           <div className={css.card}>
               <div className={css.image}>
           <Image
+            className={ css.githubImage}
             src={`https://opengraph.githubassets.com/1/${project.full_name}`}
             alt={project.name}
             fill
@@ -28,10 +29,9 @@ export default async function Projects() {
 
                   <div className={css.meta}>
             <span>{project.language}</span>
-            <span> {project.stargazers_count}</span>
           </div>
 
-          <Link href={project.html_url} target="_blank" rel="noopener noreferrer">
+          <Link href={project.html_url} target="_blank" rel="noopener noreferrer" className={ css.linkToGitHub}>
             VIEW ON GITHUB ↗
           </Link>
         </div>
